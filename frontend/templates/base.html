@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/styles.css">
+    {% block extra_css %}
+    {% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header class="header">
+        <p id="nombre-desarrollador">Federico Ariel Osler</p>
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Proyectos</li>
+                <li>Sobre mi</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
