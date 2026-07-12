@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
     <link rel="stylesheet" href="static/css/styles.css">
     {% block extra_css %}
     {% endblock %}
@@ -12,11 +13,11 @@
     <header class="header">
         <p id="nombre-desarrollador">Federico Ariel Osler</p>
         <nav>
-            <ul>
-                <li>Inicio</li>
-                <li>Proyectos</li>
-                <li>Sobre mi</li>
-                <li>Contacto</li>
+            <ul id="menu">
+                <li class="opcion-inicio">Inicio</li>
+                <li class="opcion-proyectos">Proyectos</li>
+                <li class="opcion-sobre-mi">Sobre mi</li>
+                <li class="opcion-contacto">Contacto</li>
             </ul>
         </nav>
     </header>
@@ -26,8 +27,19 @@
         {% endblock %}
     </main>
 
-    <footer>
-
+    <footer id="footer">
+        <p id="texto-footer">©2026 Federico Ariel Osler. Todos los derechos reservados</p>
+        <div id="contenedor-iconos">
+            <a href="https://github.com/federicoosler" target="_blank" rel="noopener noreferrer">
+                <i class="ti ti-brand-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/federico-ariel-osler/" target="_blank" rel="noopener noreferrer">
+                <i class="ti ti-brand-linkedin"></i>
+            </a>
+            <a href="mailto:federicoosler549@gmail.com">
+                <i class="ti ti-mail"></i>
+            </a>
+        </div>  
     </footer>
 </body>
 </html>

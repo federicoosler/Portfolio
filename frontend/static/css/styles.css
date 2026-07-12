@@ -1,3 +1,19 @@
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    background:#111017;
+    margin:0;
+    padding:0;
+}
+
+main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
 .header{
     background-color:#111017;
     display:grid;
@@ -12,15 +28,13 @@
     color:#AFA9EC;
     padding:5px;
     font-size:25px;
-
 }
 
 nav{
     display:grid;
-
 }
 
-ul{
+#menu{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap:30px;
@@ -28,7 +42,7 @@ ul{
     padding:10px;
 }
 
-li{
+.opcion-inicio,.opcion-sobre-mi,.opcion-proyectos,.opcion-contacto{
     display:flex;
     align-items:center;
     justify-content:center;
@@ -44,6 +58,49 @@ li{
 li:hover{
     cursor:pointer;
 }
-body{
-    background:#111017;
+
+
+/*FOOTER*/
+#footer{
+    background:rgb(12, 12, 12);
+    padding:0px 100px;
+    min-height:120px;
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#texto-footer{
+    color:#8a8fa8;
+    font-size:20px;
+}
+
+#contenedor-iconos{
+    display:flex;
+    justify-content: space-evenly;
+    gap:20px;
+    padding:15px 50px;
+}
+
+#contenedor-iconos a{
+    border-radius:10px;
+    padding:10px;
+    border:1px solid #8a8fa8;
+    text-decoration:none;
+    target
+}
+
+a i{
+    color:#AFA9EC;
+    font-size:30px;
+}
+
+#contenedor-iconos a:hover{
+    cursor:pointer;
+}
+
+#contenedor-iconos a i:hover{
+    color:white;
 }
