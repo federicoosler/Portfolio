@@ -1,3 +1,4 @@
+/*Body y configuraciones iniciales*/
 body{
     min-height:100vh;
     display:flex;
@@ -14,51 +15,58 @@ main{
     justify-content: center;
 }
 
+/*navbar*/
 .header{
-    background-color:#111017;
-    display:grid;
-    grid-template-columns: 60% 1fr;
-    gap:50px;
-    padding:10px;
-
-    border-bottom:1px solid #d2cff7;
+    background:#111017;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    padding:10px 80px;
+    min-height:120px;
+    border-bottom:0.5px solid rgba(255, 255, 255, 0.526);
 }
 
 #nombre-desarrollador{
     color:#AFA9EC;
     padding:5px;
     font-size:25px;
+    flex-grow:1;
+    text-align:start;
 }
 
 nav{
-    display:grid;
+    flex-grow:1;
 }
-
 #menu{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap:30px;
-    max-width:500px;
-    padding:10px;
-}
-
-.opcion-inicio,.opcion-sobre-mi,.opcion-proyectos,.opcion-contacto{
     display:flex;
     align-items:center;
-    justify-content:center;
-    
-    border-radius:10px;
-    border:2px solid white;
-    max-width:100px;
-    font-size:20px;
-    color:white;
-    padding:5px;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding:0;
+    gap:20px;
 }
 
-li:hover{
+.opcion-menu{
+    color:white;
+    background:#111017;
+
+    text-align:center;
+    border-radius:10px;
+    border:1px solid white;
+    max-width:100px;
+    padding:10px 30px;
+}
+
+.opcion-menu a{
+    color:white;
+    font-size:20px;
+    text-decoration:none;
+}
+
+.opcion-menu:hover{
+    background:rgba(236, 222, 222, 0.297);
     cursor:pointer;
 }
-
 
 /*FOOTER*/
 #footer{
@@ -89,7 +97,6 @@ li:hover{
     padding:10px;
     border:1px solid #8a8fa8;
     text-decoration:none;
-    target
 }
 
 a i{

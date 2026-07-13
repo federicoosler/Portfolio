@@ -14,10 +14,10 @@
         <p id="nombre-desarrollador">Federico Ariel Osler</p>
         <nav>
             <ul id="menu">
-                <li class="opcion-inicio">Inicio</li>
-                <li class="opcion-proyectos">Proyectos</li>
-                <li class="opcion-sobre-mi">Sobre mi</li>
-                <li class="opcion-contacto">Contacto</li>
+                <li class="opcion-menu"><a href="{{ url_for('home') }}">Inicio</a></li>
+                <li class="opcion-menu"><a href="{{ url_for('pagina_proyectos') }}">Proyectos</a></li>
+                <li class="opcion-menu"><a href="{{ url_for('pagina_sobre_mi') }}">Sobre mi</a></li>
+                <li class="opcion-menu"><a href="{{ url_for('pagina_contacto') }}">Contacto</a></li>
             </ul>
         </nav>
     </header>
