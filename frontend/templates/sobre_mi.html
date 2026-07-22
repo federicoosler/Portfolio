@@ -1,9 +1,36 @@
 {% extends "base.html" %}
 {% block title %}Inicio{% endblock %}
 {% block extra_css%}
-
+    <link rel="stylesheet" href="static/css/sobremi.css">
 {% endblock %}
 
 {% block content %}
-<p>Sobre mi</p>
+    <div id="contenedor-principal">
+        <div id="contenedor-foto-texto">
+                <img src="{{ url_for('static', filename='img/foto.jpeg') }}" id="foto">
+                <div id="contenedor-presentacion">
+                    <p id="nombre">Federico Ariel Osler</p>
+                    <p class="texto texto-ocupacion">Estudiante de ingeniería en informática</p>
+                    <div id="contenedor-localizacion">
+                        <i class="ti ti-map-pin"></i>
+                        <p id="localizacion-texto">Buenos Aires, Argentina</p>
+                    </div>
+                </div>
+        </div>
+        
+        <div id="contenedor-texto-largo">
+            <p class="texto texto-largo">Estudiante de Ingeniería en informática. Me interesa el desarrollo web y 
+            estoy buscando mi primer trabajo como desarrollador junior.
+            Trabajo cómodo tanto en el frontend como en el backend</p>
+        </div>
+        
+        <div id="contenedor-actualmente-aprendiendo">
+            <h3 class="subtitulo sub-actualmente-aprendiendo">Actualmente aprendiendo</h3>
+            <ul id="contenedor-badges">
+                <li class="badge">MySQL<li>
+                <li class="badge">Git avanzado</li>
+            </ul>
+        </div>
+        
+    </div>
 {% endblock %}

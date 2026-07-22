@@ -1,0 +1,109 @@
+#contenedor-principal{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:start;
+    justify-content: center;
+    padding:0px 0px 0px 100px;
+    gap:20px;
+}
+
+/*Primera parte - presentacion (img con datos al lado)*/
+#contenedor-foto-texto{
+    display:flex;
+    align-items:center;
+    justify-content: start;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:10px;
+}
+
+#contenedor-presentacion{
+    display:flex;
+    flex-direction:column;
+}
+
+#contenedor-localizacion{
+    display:flex;
+    justify-content:start;
+    align-items:center;
+    gap:10px;
+}
+
+#foto{
+    border-radius:50%;
+    width:150px;
+    height:150px;
+    object-fit:cover;
+}
+
+#nombre{
+    font-size:1.5rem;
+    color:white;
+}
+
+.texto-ocupacion{
+    font-size:1.2rem;
+}
+
+i{
+    color:#AFA9EC;
+    font-size:1.1rem;
+}
+
+#localizacion-texto{
+    font-size:1rem;
+    color:#9fa3b7fc;
+}
+
+/*TEXTO LARGO DE PRESENTACION.*/
+#contenedor-texto-largo{
+    display:flex;
+    justify-content: end;
+    max-width:60%;
+}
+.texto-largo{
+    font-size:1.5rem;
+    text-align:left;
+}
+
+/*ULTIMA PARTE, ACTUALMENTE APRENDIENDO...*/
+#contenedor-actualmente-aprendiendo{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+#contenedor-badges{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: center;
+    padding:10px;
+}
+
+#contenedor-badges li{
+    list-style:none;
+}
+
+/*MEDIA QUERY*/
+@media (max-width: 768px) {
+    html{
+        font-size:14px;
+    }
+    #contenedor-principal{
+        align-items:center;
+        padding:0px;
+    }
+
+    #contenedor-presentacion,#contenedor-foto-texto,#contenedor-texto-largo{
+        align-items:center;
+        justify-content:center;
+    }
+
+    .texto-ocupacion,.texto-largo,.sub-actualmente-aprendiendo{
+        text-align:center;
+    }
+
+}
