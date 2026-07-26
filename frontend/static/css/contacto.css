@@ -1,0 +1,118 @@
+#contenedor-principal{
+    display:flex;
+    padding:20px;
+}
+
+#contenedor-texto-contactame{
+    width:50%;
+    padding:10px;
+}
+
+/*FORMULARIO*/
+form{
+    min-width:50%;
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    align-items:center;
+}
+
+#subtitulo-contactame{
+    font-size:1.7rem;
+    color:white;
+}
+.texto-adaptado{
+    font-size:1.2rem;
+    max-width:90%;
+}
+
+.contenedor-input{
+    display:flex;
+    flex-direction:column;
+    padding:10px;
+    gap:10px;
+    min-width:70%;
+}
+
+.contenedor-input label{
+    color:#f0f0f0;
+    font-size:1.2rem;
+}
+
+#nombre,#email{
+    width:100%;
+    min-height:50px;
+    border-color:#181724;
+    font-size:1.3rem;
+    background:#1e1d2e;
+    color:#f0f0f0;
+    padding:5px 5px 5px 20px;
+}
+
+#mensaje{
+    width:100%;
+    min-height:100px;
+    max-height:150px;
+    padding:5px 5px 5px 20px;
+    border-color:#181724;
+    font-size:1.3rem;
+    background:#1e1d2e;
+    color:#f0f0f0;
+    resize:none;
+}
+
+#btn-enviar{
+    width:70%;
+    min-height:50px;
+    border-radius:10px;
+    font-size:1.4rem;
+    padding:10px;
+    background:#111017;
+    color:white;
+}
+
+.contenedor-input label:hover{
+    cursor:pointer;
+}
+#btn-enviar:hover{
+    cursor:pointer;
+}
+
+input::placeholder{
+    color:#545870;
+    font-size:1.3rem;
+}
+
+textarea::placeholder{
+    color:#545870;
+    font-size:1.3rem;
+}
+
+input:focus{
+    border-color:#7F77DD;
+    outline: none;
+}
+
+textarea:focus{
+    border-color:#7F77DD;
+    outline: none;
+}
+
+@media (max-width:1075px){
+    #contenedor-principal{
+        flex-direction:column;
+    }
+
+    #contenedor-texto-contactame{
+        min-width:90%;
+    }
+
+    form{
+        align-items:flex-start;
+    }
+}
+
+@media (max-width: 600px){
+
+}

@@ -1,9 +1,33 @@
 {% extends "base.html" %}
-{% block title %}Inicio{% endblock %}
+{% block title %}Contacto{% endblock %}
 {% block extra_css%}
-
+    <link rel="stylesheet" href="static/css/contacto.css">
 {% endblock %}
 
 {% block content %}
-<p>Contacto</p>
+    <div id="contenedor-principal">
+        <div id="contenedor-texto-contactame">
+            <h2 id="subtitulo-contactame">Contactame</h2>
+            <p class="texto texto-adaptado">Estoy buscando mi primer trabajo como desarrollador junior. Si tenés una propuesta 
+            o simplemente querés charlar, escribime y te respondo a la brevedad.</p>
+        </div>
+        
+        <form method="POST">
+            <div class="contenedor-input">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" class="input-requerido" name="nombre" placeholder="Escribe tu nombre" required>
+            </div>
+            
+            <div class="contenedor-input">
+                <label for="email">Email</label>
+                <input type="email" id="email"  class="input-requerido" name="email" placeholder="tu@email.com" required>
+            </div>
+            
+            <div class="contenedor-input">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" class="input-requerido" placeholder="Escribí tu mensaje acá" required></textarea>
+            </div>
+            <button type="submit" id="btn-enviar">Enviar mensaje</button>
+        </form>
+    </div>
 {% endblock %}
