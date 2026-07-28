@@ -1,9 +1,24 @@
 from flask import Flask, render_template
-#from routes.servicios_extra import servicios_extra_bp
+from flask_mail import Mail
+from routes.contacto import contacto_bp
 
-app = Flask(__name__) 
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
-#app.register_blueprint(servicios_extra_bp)
+app = Flask(__name__)
+
+app.register_blueprint(contacto_bp)
+
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USE_SSL'] = True
+app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')
+app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')
+
+mail = Mail(app)
+
+app.secret_key = os.getenv('SECRET_KEY')
 
 @app.route("/")
 def home():
@@ -20,7 +35,6 @@ def pagina_sobre_mi():
 @app.route("/contacto")
 def pagina_contacto():
       return render_template("contacto.html")
-
 
 if __name__ == "__main__":
        app.run(debug=True,port = 5001)

@@ -12,7 +12,7 @@
             o simplemente querés charlar, escribime y te respondo a la brevedad.</p>
         </div>
         
-        <form method="POST">
+        <form method="POST" action="/contacto">
             <div class="contenedor-input">
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" class="input-requerido" name="nombre" placeholder="Escribe tu nombre" required>
@@ -28,6 +28,11 @@
                 <textarea name="mensaje" id="mensaje" class="input-requerido" placeholder="Escribí tu mensaje acá" required></textarea>
             </div>
             <button type="submit" id="btn-enviar">Enviar mensaje</button>
+            {% for mensaje in get_flashed_messages() %}
+                <p class="mensaje-enviado">{{ mensaje }}</p>
+            {% endfor %}
         </form>
+        
     </div>
+    <script src="{{ url_for('static', filename='js/contacto.js') }}"></script>
 {% endblock %}

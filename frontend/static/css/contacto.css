@@ -99,6 +99,19 @@ textarea:focus{
     outline: none;
 }
 
+.mensaje-enviado{
+    background:rgb(118, 207, 118);
+    color:white;
+    padding:10px;
+    font-size:1.3rem;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.mensaje-enviado.oculto{
+    opacity:0;
+}
+
 @media (max-width:1075px){
     #contenedor-principal{
         flex-direction:column;
