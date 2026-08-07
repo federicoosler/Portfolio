@@ -1,9 +1,54 @@
 {% extends "base.html" %}
 {% block title %}Inicio{% endblock %}
 {% block extra_css%}
-
+    <link rel="stylesheet" href="static/css/proyectos.css">
 {% endblock %}
 
 {% block content %}
-<p>Proyectos</p>
+    <div id="contenedor-principal">
+        <h2 class="subtitulo">Proyectos</h2>
+        <div id="contenedor-proyectos">
+            <div class="proyecto-contenedor">
+                <div class="contenedor-iconos">
+                    <i class="ti ti-calendar icono-calendario"></i>
+                    <div class="contenedor-git-demo">
+                        <a href="https://github.com/federicoosler/Pagina_restaurante" target="_blank" rel="noopener noreferrer">
+                            <i class="ti ti-brand-github icono-github"></i>
+                        </a>
+                        <a href="https://github.com/federicoosler/Pagina_restaurante" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="contenedor-titulo-texto-proyecto">
+                    <h3 class="titulo-proyecto">Sistema de reservas</h3>
+                    <p class="texto tema-proyecto">App web para gestionar reservas de un restaurante.Autenticación,panel de admin,QR por email.</p>
+                </div>
+                <ul id="contenedor-tecnologias-usadas">
+                    <li class="badge nuevo">HTML</li>
+                    <li class="badge nuevo">CSS</li>
+                    <li class="badge nuevo">Flask</li>
+                    <li class="badge nuevo">MySQL</li>
+                    <li class="badge nuevo">Jinja</li>
+                    <li class="badge nuevo">JavaScript</li>
+                </ul>
+            </div>
+            <div class="proyecto-contenedor">
+                <div class="contenedor-iconos">
+                    <i class="ti ti-calendar icono-calendario"></i>
+                    <div class="contenedor-git-demo">
+                        <a href="https://github.com/federicoosler/Cuenta-bancaria" target="_blank" rel="noopener noreferrer">
+                            <i class="ti ti-brand-github icono-github"></i>
+                        </a>
+                        <a href="https://github.com/federicoosler/Cuenta-bancaria" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="contenedor-titulo-texto-proyecto">
+                    <h3 class="titulo-proyecto">Sistema bancario</h3>
+                    <p class="texto tema-proyecto">Sistema bancario por consola. Permite crear cuentas, gestionar depósitos y transferencias, otorgar y pagar préstamos, con validación de datos (DNI, formato de entrada) y resumen de movimientos.</p>
+                </div>
+                <ul id="contenedor-tecnologias-usadas">
+                    <li class="badge nuevo">Python</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 {% endblock %}

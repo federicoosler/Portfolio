@@ -1,0 +1,119 @@
+#contenedor-principal{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+}
+
+
+#contenedor-proyectos{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    place-content:center;
+    align-items:stretch;
+
+    width:100%;
+    padding:5px;
+    gap:24px;
+
+}
+/*DISEÑO DE CADA TARJETA DE PROYECTO*/
+.proyecto-contenedor{
+    display:flex;
+    flex-direction:column;
+
+    background:#181724;
+    border-radius:20px;
+    border:0.5px solid white;
+    padding:20px 20px 30px 20px;
+    gap:10px;
+    
+}
+
+/*TECNOLOGIAS UTILIZADAS*/
+#contenedor-tecnologias-usadas{
+    display:flex;
+    justify-content:start;
+    flex-wrap:wrap;
+    
+    min-width:90%;
+    padding:5px;
+    gap:10px;
+    list-style:none;
+    margin-top:auto;
+}
+
+/*ICONOS USADOS*/
+.contenedor-iconos{
+    display:flex;
+    justify-content:space-between;
+    padding:5px;
+}
+
+.contenedor-git-demo{
+    padding:5px;
+
+}
+
+.contenedor-git-demo a{
+    color:#7F77DD;
+    font-size:1.1rem;
+    text-decoration:none;
+}
+
+.contenedor-git-demo a:hover{
+    color:white;
+    cursor:pointer;
+}
+
+.icono-calendario{
+    font-size:2.5rem;
+    color:#7F77DD;
+    background:rgba(127,119,221,0.13);
+    padding:5px;
+    border-radius:10px;
+}
+
+.icono-github{
+    font-size:1.3rem;
+}
+
+/*TITULOS, TEXTO*/
+.contenedor-titulo-texto-proyecto{
+    display:flex;
+    flex-direction:column;
+}
+
+.titulo-proyecto{
+    font-size:1.5rem;
+    color:white;
+}
+
+.tema-proyecto{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:1.2rem;
+    padding:5px;
+}
+
+.nuevo{
+    margin:0px;
+    min-width:auto;
+}
+/*MEDIA*/
+@media (max-width: 1250px){
+    #contenedor-proyectos{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 890px){
+    #contenedor-proyectos{
+        grid-template-columns:1fr;
+    }
+}
