@@ -62,6 +62,7 @@
     color:#7F77DD;
     font-size:1.1rem;
     text-decoration:none;
+    padding:5px 10px;
 }
 
 .contenedor-git-demo a:hover{
@@ -75,10 +76,6 @@
     background:rgba(127,119,221,0.13);
     padding:5px;
     border-radius:10px;
-}
-
-.icono-github{
-    font-size:1.3rem;
 }
 
 /*TITULOS, TEXTO*/
