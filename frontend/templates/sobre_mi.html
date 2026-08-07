@@ -1,7 +1,7 @@
 {% extends "base.html" %}
-{% block title %}Inicio{% endblock %}
+{% block title %}Sobre mi{% endblock %}
 {% block extra_css%}
-    <link rel="stylesheet" href="static/css/sobremi.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sobremi.css') }}">
 {% endblock %}
 
 {% block content %}
@@ -29,6 +29,7 @@
             <ul id="contenedor-badges">
                 <li class="badge">MySQL<li>
                 <li class="badge">Git avanzado</li>
+                <li class="badge">Java</li>
             </ul>
         </div>
         

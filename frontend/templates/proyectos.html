@@ -1,7 +1,7 @@
 {% extends "base.html" %}
-{% block title %}Inicio{% endblock %}
+{% block title %}Proyectos{% endblock %}
 {% block extra_css%}
-    <link rel="stylesheet" href="static/css/proyectos.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/proyectos.css') }}">
 {% endblock %}
 
 {% block content %}
@@ -18,7 +18,7 @@
                 </div>
                 <div class="contenedor-titulo-texto-proyecto">
                     <h3 class="titulo-proyecto">Sistema de reservas</h3>
-                    <p class="texto tema-proyecto">App web para gestionar reservas de un restaurante.Autenticación,panel de admin,QR por email.</p>
+                    <p class="texto tema-proyecto">App web para gestionar reservas de un restaurante. Autenticación,panel de admin,QR por email.</p>
                 </div>
                 <ul id="contenedor-tecnologias-usadas">
                     <li class="badge nuevo">HTML</li>
